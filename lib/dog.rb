@@ -37,4 +37,7 @@ class Dog
     self
   end
 
+  def self.create(name:, breed:)
+    self.new(name, breed).tap { |s| s.save }
+  end
 end #class Dog
