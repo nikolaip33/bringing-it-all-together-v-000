@@ -54,6 +54,7 @@ class Dog
     if !dog.empty?
       data = dog[0]
       self.new(data[0], data[1], data[2])
+    end
   end
 
 end #class Dog
