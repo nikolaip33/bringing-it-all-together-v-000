@@ -30,7 +30,7 @@ class Dog
     if self.id
       self.update
     else
-      sql = "INSERT INTO dogs (name, breed) VALUES (? ?)"
+      sql = "INSERT INTO dogs (name, breed) VALUES (?, ?)"
       DB[:conn].execute(sql, self.name, self.breed)
       @id = DB[:conn].execute("SELECT last_insert_rowis() FROM students")[0][0]
     end
