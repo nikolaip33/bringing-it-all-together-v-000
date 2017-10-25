@@ -41,4 +41,8 @@ class Dog
     self.new(name: name, breed: breed).tap { |s| s.save }
   end
 
+  def self.find_by_id
+
+  end
+
 end #class Dog
