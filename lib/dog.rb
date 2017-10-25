@@ -9,4 +9,14 @@ class Dog
     @breed = breed
   end
 
+  def self.create_table
+
+
+  end
+
+  def save
+
+
+  end
+
 end #class Dog
