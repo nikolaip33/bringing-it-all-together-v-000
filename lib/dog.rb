@@ -43,7 +43,7 @@ class Dog
     self.new(name: name, breed: breed).tap { |s| s.save }
   end
 
-  def self.find_by_id
+  def self.find_by_id(id)
     sql = "SELECT * FROM dogs WHERE id = ?"
     d = DB[:conn].execute(sql, self.id)[0]
     binding.pry
