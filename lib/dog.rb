@@ -44,7 +44,7 @@ class Dog
   def self.find_by_id
     sql = "SELECT * FROM dogs WHERE id = ?"
     d = DB[:conn].execute(sql, self.id)[0]
-    puts d
+    binding.pry
     self.new(id: d[0], name: d[1], breed: d[2])
   end
 
